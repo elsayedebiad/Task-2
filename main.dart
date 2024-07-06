@@ -79,11 +79,11 @@ void PrintArea(Shape shape) {
   print('The Shape is  : ${shape.area()}');
 }
 
-abstract class Serializable {
+interface class Serializable {
   String toJson();
 }
 
-class User extends Serializable {
+class User implements Serializable {
   String name;
   String email;
 
