@@ -80,7 +80,7 @@ void PrintArea(Shape shape) {
 }
 
 interface class Serializable {
-  String toJson();
+   toJson(){}
 }
 
 class User implements Serializable {
