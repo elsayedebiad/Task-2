@@ -113,10 +113,12 @@ class BankAccount {
 
   void withdraw(double amount) {
     if (balance < amount) {
-      print("Your balance is insufficient");
+        throw Handel;
     } else {
       balance -= amount;
       print("Withdraw : $amount. New balance : $balance");
     }
   }
 }
+
+class Handel implements Exception {}
